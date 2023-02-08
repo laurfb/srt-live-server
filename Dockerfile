@@ -9,7 +9,7 @@ RUN apk add --no-cache linux-headers alpine-sdk cmake tcl openssl-dev zlib-dev
 #Clone projects
 WORKDIR /tmp
 RUN git clone https://github.com/Haivision/srt.git srt
-RUN git clone https://github.com/Edward-Wu/srt-live-server.git sls
+RUN git clone https://github.com/laurfb/srt-live-server-wu.git sls
 
 #Compile SRT
 WORKDIR /tmp/srt
