@@ -4,7 +4,7 @@ FROM alpine:latest as build
 #Update 
 RUN apk update
 RUN apk upgrade 
-RUN apk add --no-cache linux-headers alpine-sdk cmake tcl openssl zlib-dev
+RUN apk add --no-cache linux-headers alpine-sdk cmake tcl openssl-dev zlib-dev
 
 #Clone projects
 WORKDIR /tmp
