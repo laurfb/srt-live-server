@@ -42,4 +42,4 @@ VOLUME /logs
 EXPOSE 1935/udp
 USER srt
 WORKDIR /home/srt
-ENTRYPOINT [ "sls", "-c", "/etc/sls/sls.conf"]
+ENTRYPOINT ["sls", "-c", "/etc/sls/sls.conf"]
