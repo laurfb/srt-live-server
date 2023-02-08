@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag srt-live-serverX:$(date +%s)
+      run: docker build . --file Dockerfile --tag srt-live-server-x:$(date +%s)
