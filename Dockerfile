@@ -19,7 +19,7 @@ RUN make install
 
 #Compile srt-live-server
 WORKDIR /tmp/sls
-RUN CC="gcc-9.5" make
+RUN make
 
 #Final stage
 FROM alpine:latest
