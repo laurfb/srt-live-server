@@ -1,5 +1,5 @@
 #Build stage
-FROM alpine:latest as build
+FROM alpine:3.18.3 as build
 
 #Update 
 RUN apk update
@@ -22,7 +22,7 @@ WORKDIR /tmp/sls
 RUN make
 
 #Final stage
-FROM alpine:latest
+FROM alpine:3.18.3
 ENV LD_LIBRARY_PATH /lib:/usr/lib:/usr/local/lib64
 RUN apk update
 RUN apk upgrade
